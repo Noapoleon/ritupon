@@ -2,8 +2,10 @@
 
 int	main(void)
 {
-	long i = 0;
+	const char str[] = "Ritupon Baishya from Guwahati Assam India #%ld\n";
+	size_t	i = 0;
+
 	while (1)
-		printf("Ritupon Baishya from Guwahati Assam India #%ld\n", ++i);
+		printf(str, i++);
 	return (0);
 }
